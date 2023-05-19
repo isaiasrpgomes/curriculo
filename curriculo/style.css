@@ -1,7 +1,15 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
 .container {
     margin: auto;
-    width: 300px;
-    border: 3px dotted teal
+    background-color: teal;
+    color: #f5fefd;
+    height: 100%;
+    width: 700px;
+    border: 1px solid teal 
 }
 
 .titles {
@@ -24,6 +32,7 @@
 
 .img  {
     width: 100px;
+    border: 2px solid red;
     border-radius: 50%;
 }
 
@@ -44,7 +53,7 @@ p {
 }
 
 .area {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -52,3 +61,23 @@ ul {
     margin-left: -25px;
     font-family: "Lato", sans-serif;
 }
+
+p.big {
+    margin-right: 20px;
+}
+
+@media(max-width: 320px) {
+    
+    .container {
+        width: 100%;
+        border: 1px solid teal;
+        color: #f5fefd;
+        background-color: teal;
+    }
+
+    .big {
+        padding-bottom: 15px;
+    }
+
+}
+
